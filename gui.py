@@ -1,14 +1,14 @@
 import streamlit as st
 import pandas as pd
  
-import main  # your backend module
+import main
  
 st.set_page_config(page_title="Astronaut Health Monitor", layout="wide")
  
 STATUS_COLOR = {"normal": "🟢", "warning": "🟡", "critical": "🔴"}
  
 st.title("🧑‍🚀 Astronaut Health Monitor")
-st.caption("Live health indicators — flags issues before they become emergencies.")
+st.caption("Live health indicators. Flags issues before they become emergencies.")
  
 if "history" not in st.session_state:
     st.session_state.history = pd.DataFrame(
@@ -24,7 +24,7 @@ with col1:
  
     if st.session_state.profile is None:
         with st.form("profile_form"):
-            name = st.text_input("Name", "Cmdr. Rivera")
+            name = st.text_input("Name", "Mb. J")
             age = st.number_input("Age", 18, 70, 40)
             sex = st.selectbox("Sex", ["M", "F"])
             weight = st.number_input("Weight (kg)", 40, 150, 78)
