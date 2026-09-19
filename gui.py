@@ -4,10 +4,24 @@ import pandas as pd
 import main
  
 st.set_page_config(page_title="Astronaut Health Monitor", layout="wide")
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url('https://wallpapercave.com/wp/wp5440054.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
  
 STATUS_COLOR = {"normal": "🟢", "warning": "🟡", "critical": "🔴"}
- 
-st.title("🧑‍🚀 Astronaut Health Monitor")
+
+st.title(" Astronaut Health Monitor")
 st.caption("Live health indicators. Flags issues before they become emergencies.")
  
 if "history" not in st.session_state:
