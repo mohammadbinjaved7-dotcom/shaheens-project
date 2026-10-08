@@ -1,0 +1,34 @@
+{
+  "mbj": {
+    "name": "mbj",
+    "age": 40,
+    "sex": "M",
+    "weight_kg": 78,
+    "height_cm": 180,
+    "activity_level": "low",
+    "readings": [
+      {
+        "heart_rate": 75,
+        "bone_density_loss": 1.0,
+        "radiation_dose": 0.5,
+        "sleep_hours": 6.5
+      }
+    ]
+  },
+  "dragon": {
+    "name": "dragon",
+    "age": 40,
+    "sex": "M",
+    "weight_kg": 70,
+    "height_cm": 180,
+    "activity_level": "high",
+    "readings": [
+      {
+        "heart_rate": 190,
+        "bone_density_loss": 1.0,
+        "radiation_dose": 0.5,
+        "sleep_hours": 6.5
+      }
+    ]
+  }
+}
